@@ -1,0 +1,26 @@
+$column-width: 63px; //960 - 12 column grid
+$column-gutter: 20px; //gutter included in the whole width
+
+.container {
+    @include clearfix;
+    @include grid-unit(12);
+    float: none;
+    margin: 0 auto;
+}
+
+.main-content {
+    @include grid-unit(8);
+}
+
+.sidebar {
+    @include grid-unit(4);
+    margin-right: 0;
+}
+
+.container {
+    width:(940px / 960px); .main-content {
+        width: (620px / 940px);
+    } .sidebar {
+        width: (300px / 940px); 
+    }
+}

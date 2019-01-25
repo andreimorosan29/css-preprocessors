@@ -1,0 +1,6 @@
+@mixin grid-unit($span) {
+    float: left;
+    margin-right: $gutter-width;
+    width: ($column-width * $span) + ($gutter-width * ($span - 1));
+}
+
