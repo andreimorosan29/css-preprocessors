@@ -7,6 +7,6 @@ a {
 a:visited {
     color: darken($base-link-color, 20%);
 } figcaption {
-    background-color: transparentize($color: #fff, $amount: 50%)
+    background-color: transparentize(#fff, 0.5)
 }
 
